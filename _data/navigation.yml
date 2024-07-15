@@ -16,3 +16,15 @@ main:
 #   url: /collection-archive/
 # - title: "Sitemap"
 #   url: /sitemap/
+sidebar-category:
+  - title: "Category"
+    children:
+      - title: "📚 Paper 정리"
+        url:  "/papers"
+        category: "paper"
+      - title: "📝 Study 내용"
+        url:  "/study"
+        category: "study"
+      - title: "💡 생각 끄적임"
+        url: "/blog"
+        category: "blog"
