@@ -23,10 +23,10 @@ name                     : "워포(WaterForest)"
 description              : "꾸준히 논문 정리 및 스터디 기록"
 url                      : "https://harim0.github.io/"
 baseurl                  : # ""
-repository               : "https://github.com/harim0/harim0.github.io"
+repository               : "harim0/harim0.github.io"
 teaser                   : "/assets/images/teaser_1.png"
 logo                     : "/assets/images/logo.png"
-masthead_title           : "성장하는 연구원"
+masthead_title           : "有志事成 : 성장하는 대학원생"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "WaterForest"
   avatar           : "/assets/images/harim0_1.png"
-  bio              : "극P 대학원생, 기록을 시작하다"
+  bio              : "극P, 기록을 시작하다"
   location         : "Seoul, Republic of Korea"
   email            : "achel0303@naver.com"
   links:
