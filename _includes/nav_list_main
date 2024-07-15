@@ -1,0 +1,41 @@
+{% assign sum = site.posts | size %}
+
+<nav class="nav__list">
+    <input id="ac-toc" name="accordion-toc" type="checkbox" />
+    <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label | default: "Category" }}</label>
+    <ul class="nav__items" id="category_tag_menu">
+        <!--전체 글 수-->
+        <li>
+            📂 <span style="font-family:'Cafe24Oneprettynight';">전체 글 수</span> <span style="font-family:'Coming Soon';">{{ sum }}</span> <span style="font-family:'Cafe24Oneprettynight';">개</span> 
+        </li>
+        {% assign navigation = site.data.navigation['sidebar-category'] %}
+        {% for nav in navigation %}
+            <li>
+                {% if nav.url %}
+                    <a href="{{ nav.url | relative_url }}"><span class="nav__sub-title">{{ nav.title }}</span></a>
+                {% else %}
+                    <span class="nav__sub-title">{{ nav.title }}</span>
+                {% endif %}
+
+                {% if nav.children %}
+                    <ul>
+                        {% for child in nav.children %}
+                            {% assign post_cnt = 0 %}
+                            {% for category in site.categories %}
+                                {% if category[0] == child.category %}
+                                    {% assign post_cnt = category[1].size %}
+                                {% endif %}
+                            {% endfor %}
+                            <li>
+                                <a href="{{ child.url | relative_url }}" {% if child.url == page.url %}class="active"{% endif %}>
+                                    {{ child.title }} ({{ post_cnt }})
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+</nav>
+
