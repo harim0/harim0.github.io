@@ -1,6 +1,16 @@
 ---
 layout: home
+entries_layout: list
+header:
+    overlay_image: "/assets/images/header3.png"
+    overlay_filter: 0.1 # same as adding an opacity of 0.5 to a black background
 author_profile: true
 sidebar:
     nav: "sidebar-category"
 ---
+<div class="grid__wrapper">
+    {% for post in paginator.posts %}
+    {% include archive-single3.html type="list" %}
+    {% endfor %}
+</div>
+{% include paginator.html %} 
