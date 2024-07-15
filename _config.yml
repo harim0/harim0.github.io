@@ -22,7 +22,7 @@ subtitle                 : # site tagline that appears below site title in masth
 name                     : "WaterForest"
 description              : "논문 정리 및 스터디 기록"
 url                      : "https://harim0.github.io/"
-baseurl                  : "https://harim0.github.io/"
+baseurl                  : #""
 repository               : "harim0/harim0.github.io"
 teaser                   : "/assets/images/teaser_1.png"
 logo                     : "/assets/images/logo.png"
