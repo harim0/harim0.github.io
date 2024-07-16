@@ -392,6 +392,7 @@ body {
   padding: 0;
   font-size: 0.75em;
   list-style: none;
+  position: relative;
 
   @include breakpoint($large) {
     grid-template-columns: repeat(3, 1fr);
