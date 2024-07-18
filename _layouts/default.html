@@ -38,6 +38,9 @@ sidebar:
         {% include_cached search/search_form.html %}
       </div>
     {% endif %}
+    {% if page.use_math %}
+      {% include mathjax_support.html %}
+    {% endif %}
 
         <!--사이드바 위, 아래, 홈버튼 기능 추가-->
         <aside class="sidebar__top">
