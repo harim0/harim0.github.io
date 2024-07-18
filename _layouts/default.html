@@ -1,4 +1,7 @@
 ---
+layout: default
+sidebar:
+    nav: "sidebar-category"
 ---
 
 <!doctype html>
@@ -23,21 +26,17 @@
       } 
     </style>
   </head>
-
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
     {% include_cached skip-links.html %}
     {% include_cached masthead.html %}
-
-    {% if site.minimal_mistakes_skin2 %}
-    <button type="button" onclick="node1=document.getElementById('theme_source');node2=document.getElementById('theme_source_2');if(node1.getAttribute('rel')=='stylesheet'){node1.setAttribute('rel', 'stylesheet alternate'); node2.setAttribute('rel', 'stylesheet');sessionStorage.setItem('theme', 'dark');}else{node2.setAttribute('rel', 'stylesheet alternate'); node1.setAttribute('rel', 'stylesheet');sessionStorage.setItem('theme', 'light');} return false;">
-      MODE!
-    </button>
-  {% endif %}
+    <!-- <div class="sidebar">
+      {% include nav_list_main.html %}
+    </div> -->
 
     <div class="initial-content">
       {{ content }}
     </div>
-
+    
     {% if site.search == true %}
       <div class="search-content">
         {% include_cached search/search_form.html %}
@@ -52,7 +51,6 @@
         <aside class="sidebar__bottom">
           <a href="#footer"> <i class="fa fa-angle-double-down fa-2x"></i> </a>
         </aside>
-    
         <!-- 라이트모드 토글 추가 -->
         <aside class= "dark__toggle">
           {% if site.minimal_mistakes_skin2 %}
@@ -69,13 +67,14 @@
             </i>
           {% endif %}
         </aside>
-
+        
     <div id="footer" class="page__footer">
       <footer>
         {% include footer/custom.html %}
         {% include_cached footer.html %}
       </footer>
     </div>
+    
 
     {% include scripts.html %}
 
