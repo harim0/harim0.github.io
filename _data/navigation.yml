@@ -11,6 +11,9 @@ main:
 sidebar-category:
   - title: "📚 논문 정리"
     children:
+      - title: "Neural Architecture Search"
+        url: "/categories/nas"
+        category: "nas"
       - title: "Model Compression"
         url: "/categories/model_compression"
         category: "model_compression"
