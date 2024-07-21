@@ -3,9 +3,11 @@
         "backpropagate",
         "𝐶𝐼",
         "convolutional",
+        "logit",
         "mathbb",
         "mathcal",
         "ouput",
+        "Pretrain",
         "Softmax",
         "Unpruned"
     ]
