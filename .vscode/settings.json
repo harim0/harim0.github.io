@@ -2,14 +2,21 @@
     "cSpell.words": [
         "backpropagate",
         "𝐶𝐼",
+        "CNNs",
+        "Conv",
         "convolutional",
+        "feedforward",
         "logit",
         "mathbb",
         "mathcal",
         "NATS",
         "ouput",
+        "Overfitting",
         "Pretrain",
+        "pretraining",
+        "Propagtion",
         "Softmax",
-        "Unpruned"
+        "Unpruned",
+        "WANN's"
     ]
 }
