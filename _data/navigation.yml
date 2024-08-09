@@ -28,6 +28,14 @@ sidebar-category:
       - title: "프로그래머스"
         url: "/categories/programmers"
         category: "programmers"
+  - title: "🎨 채우기"
+    children:
+      - title: "선형대수"
+        url: "/categories/linear_algebra"
+        category: "linear_algebra"
+      - title: "특강"
+        url: "/categories/lectures"
+        category: "lectures"
   - title: "💡 끄적임"
     children:
       - title: "생각"

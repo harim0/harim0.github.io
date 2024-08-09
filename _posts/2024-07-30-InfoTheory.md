@@ -1,9 +1,9 @@
 ---
 title: "Information & Learning Lecture 1 Review"
 categories:
-  - thinking
+  - lectures
 tags:
-  - thinking
+  - lectures
 toc: true
 toc_sticky: true
 toc_label: "Lecture Review"
