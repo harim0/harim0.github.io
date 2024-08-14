@@ -25,7 +25,7 @@ use_math: true
 ![image](/assets/images/pages/vector.jpg){: width="300" height="300"}    
 
 ### Vector Space(벡터공간)
-정의 : 집합 $\mathbb{R}^n = \Set{(x_1,x_2,...,x_n)|x_i \in R}$에서 덧셈, 스칼라 곱 연산이 주어지는 경우 $R^n$을 벡터 공간이라 한다.   
+정의 : 집합 $\mathbb{R}^n = \Set{(x_1,x_2,\dots,x_n)|x_i \in R}$에서 덧셈, 스칼라 곱 연산이 주어지는 경우 $R^n$을 벡터 공간이라 한다.   
 - 부분공간은 첫째로 $\forall x,y \in W : x+y \in W$, 둘째로 $x \in W : \forall \lambda \in R : \lambda_x \in W$를 만족하는 $W(\not = \varnothing) \in \mathbb{R}^n$이다.   
   - $\mathbb{R}^2 \to W=\Set{(0,0)\text{ 과 원점 지나는 직선, }R^2}$   
   - $\mathbb{R}^3 \to W=\Set{(0,0,0)\text{ 과 원점 지나는 평면, 원점 지나는 직선, }R^3}$   
@@ -35,8 +35,8 @@ use_math: true
 **선형대수**는 **유클리드 기하학에서 다루는 직선, 평면들의 관계를 대수적으로 계산할 수 있다**는 의미를 담는다.   
 
 ### Linear Combination(선형결합) 
-정의 : $x_1,...,x_m \in \mathbb{R}^n, \lambda_1, ...,\lambda_m \in \mathbb{R}$이라고 하였을 때, 
-$\lambda_1x_1+...+\lambda_m x_m$을 **Linear Combination**이라 한다.
+정의 : $x_1,\dots,x_m \in \mathbb{R}^n, \lambda_1, \dots,\lambda_m \in \mathbb{R}$이라고 하였을 때, 
+$\lambda_1x_1+\dots+\lambda_m x_m$을 **Linear Combination**이라 한다.
 
 ![image](/assets/images/pages/vector0.jpg){: width="300" height="300"}    
 선형결합은 벡터계산의 평행선 법칙을 대수화 한 것이다.
@@ -45,8 +45,8 @@ $\lambda_1x_1+...+\lambda_m x_m$을 **Linear Combination**이라 한다.
 스칼라를 다르게 하여 모든 2차원 벡터를 만들 수 있다.    
 
 ### Span(생성)   
-정의 : 주어진 $m$개의 벡터 $S=\Set{x_1,...,x_m} \subset \mathbb{R}^n$에 대하여, 임의의 m개의 실수 $\lambda_1,...,\lambda_m \in \mathbb{R}$와 모든 선형결합을   
-$Span(S)=\Set{\lambda_1 x_1,...,\lambda_m x_m|\lambda_1,...,\lambda_m \in \mathbb{R}}$이라고 하면, $Span(S)$는 $\mathbb{R}^n$의 부분공간이다.   
+정의 : 주어진 $m$개의 벡터 $S=\Set{x_1,\dots,x_m} \subset \mathbb{R}^n$에 대하여, 임의의 m개의 실수 $\lambda_1,\dots,\lambda_m \in \mathbb{R}$와 모든 선형결합을   
+$Span(S)=\Set{\lambda_1 x_1,\dots,\lambda_m x_m|\lambda_1,\dots,\lambda_m \in \mathbb{R}}$이라고 하면, $Span(S)$는 $\mathbb{R}^n$의 부분공간이다.   
 
 벡터 $\vec{v}$와 $\vec{w}$의 **"span"**은 모든 Linear Combination의 집합이다.   
 즉, 각자 scale하여 더했을 때 얻을 수 있는 모든 가능한 벡터의 집합이다.   
@@ -70,10 +70,10 @@ $a\vec{v}+b\vec{w}$
 ex) 3개의 벡터가 있을 때, 세번째 벡터가 두 벡터의 span 위에 놓여 있지 않은 경우 별개의 방향을 가리키기 때문에 모든 가능한 3차원 벡터에 접근할 수 있다.   
 
 ### Basis(기저)  
-정의 : 주어진 n개의 벡터 $S=\Set{x_1,...,x_m} \subset R^n$에 대하여, 다음을 만족할 때 $R^n$의 기저라 한다.   
+정의 : 주어진 n개의 벡터 $S=\Set{x_1,\dots,x_m} \subset R^n$에 대하여, 다음을 만족할 때 $R^n$의 기저라 한다.   
 1. $\mathbb{R}^n=Span(S)$   
-2. $n$개의 벡터 $x_1,...,x_m $가 선형독립이다.   
-3. $S=\Set{x_1,...,x_m} \subset \mathbb{R}^n, m \le n$라 하고, m개의 벡터 $x_1,...,x_m$가 선형독립일 때 벡터공간 $Span(S)$의 차원은 $dim Span(S)=m$이다.    
+2. $n$개의 벡터 $x_1,\dots,x_m $가 선형독립이다.   
+3. $S=\Set{x_1,\dots,x_m} \subset \mathbb{R}^n, m \le n$라 하고, m개의 벡터 $x_1,\dots,x_m$가 선형독립일 때 벡터공간 $Span(S)$의 차원은 $dim Span(S)=m$이다.    
 
 기저는 기준이 되는 좌표계를 설정하는 것이다.    
 - Standard Basis (표준기저): $ \text{벡터공간 }\mathbb{R}^n = \Set{(x_1, \dots, x_n) \mid x_i \in \mathbb{R}} \text{ 의 원소 } e_1 = (1, 0, \dots, 0), \, e_2 = (0, 1, \dots, 0), \dots, e_n = (0, \dots, 0, 1)$
@@ -95,6 +95,8 @@ ex) 3개의 벡터가 있을 때, 세번째 벡터가 두 벡터의 span 위에 
   $$\text{변환된 }\vec{v} = -1(\text{변환된 }\hat{i})+2(\text{변환된 }\hat{j})$$   
 
 - matrix : 선형변환을 설명하는 정보를 묶어 표현하는 방법.   
+
+하나의 $m\times n$ 행렬 $A$는 벡터공간 $\mathbb{R}^n$에서 $\mathbb{R}^m$으로의 함수이며, 두 선형법칙을 만족하는 $A$를 **선형변환**이라 한다.     
 
 회전 후 전단(두번의 움직임) &rarr; 한번의 동작   
   $$\begin{bmatrix}
@@ -141,12 +143,58 @@ ex) 3개의 벡터가 있을 때, 세번째 벡터가 두 벡터의 span 위에 
 ### Column Space(열공간)  
 가능한 모든 출력의 집합 = 열들의 span
 
+- 행렬의 Column Vector(열벡터)는 Basis(기저벡터)의 도착지이다.   
+
 ### Null Space(영공간)  
 Kernel = 원점에 도달하는 벡터의 집합 = 0벡터에 도달하는 모든 벡터의 공간   
 
 선형연립방정식의 경우, v가 $$\begin{bmatrix} 0 \\ 0 \end{bmatrix}$$인 경우로 방정식의 가능한 모든 해가 된다.   
 
 ## 3 Inner Products, Duality, Outer Products, Crammer's Rule
+### Inner Products(내적)  
+벡터공간 $\mathbb{R}^n=\Set{(x_1,x_2,\dots,x_n)|x_i \in R}$ 의 내적은 다음과 같이 정의된다.   
+
+ $\forall  x=(x_1,x_2,\dots,x_n), y=(y_1,y_2,\dots,y_n) : <x,y> = x_1y_1+\dots +x_ny_n = \lVert x \rVert \lVert y \rVert \cos \theta$   
+ $$<x,y>=\mathbf{x}\centerdot \mathbf{y}^T=(x_1,x_2,\dots,x_n)\begin{pmatrix} 1 & 0 & \cdots & 0 \\ 0 & 1 & \cdots & 0 \\ \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & \cdots & 1 \end{pmatrix} \begin{pmatrix} y_1 \\ y_2 \\ \vdots \\ y_n \end{pmatrix}$$   
+
+두 벡터 사이의 각도와 크기를 고려한 연산으로 대칭성의 성질에 의해 순서는 상관없다.   
+
+- norm(크기) : $ \lVert v \rVert = \sqrt{<v,v>} = \sqrt{(x_1^2,\dots,x_n^2)}$   
+- cauchy-schwarz 부등식 : $| \langle v, w \rangle | \le \lVert v \rVert \lVert w \rVert$   
+.  
+
+![image](/assets/images/pages/innerproduct.jpg){: width="700" height="700"}   
+
+**Q. 내적의 유효성? 좌표를 짝짓고 곱한 다음 합하는 내적의 수치적 과정이 사영과 무슨 관련성이 있나??**   
+
+$Matrix-Vector \space Product \longleftrightarrow Dot \space Product$   
+단위 벡터의 내적 = 벡터를 단위벡터로 투영한 길이   
+
+**두 벡터를 내적하는 것 = 두 벡터 중 하나를 변환 인자로 보는 것.**   
+
+### Duality(쌍대성)   
+어떤 공간을 수선으로 선형변환할 때 마다 그 공간의 한 특정 벡터와 연관이 있다.   
+$$\begin{bmatrix} 2\\1 \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} 2&1 \end{bmatrix}  \begin{bmatrix} x\\ y \end{bmatrix}  = 2\centerdot x+1\centerdot y$$   
+- 벡터에서의 "Dual" : 그 벡터가 가진 선형변환 성질   
+- 1차원으로 변환시키는 선형변환에서 "Dual" : 공간 상의 특정 벡터   
+
+### Cross Products(외적)  
+$\mathbf{\vec{x}} \times \mathbf{\vec{y}} = \lVert \vec{x} \rVert \lVert \vec{y} \rVert \sin \theta n = \mathbf{\vec{p}}$   
+
+두 벡터 사이의 평행사변형의 면적과 방향을 나타내는 연산으로 순서가 중요하다.    
+새 벡터 p의 길이는 평행사변형의 면적과 같고, 방향은 평행사변형에 수직이다(양수라면 오른손 법칙, 음수라면 왼손 법칙).   
+
+2차원 공간 : $\mathbf{\vec{v}} \begin{bmatrix} 3 \\ 1 \end{bmatrix}$이고, $\mathbf{\vec{w}} \begin{bmatrix} 2 \\ -1 \end{bmatrix}$ 일 때, $\mathbf{\vec{v}} \times \mathbf{\vec{w}} = det \begin{pmatrix} \begin{bmatrix} 3 & 2 \\ 1 & -1 \end{bmatrix} \end{pmatrix}$
+
+![image](/assets/images/pages/crossproduct.png){: width="600" height="600"}   
+
+
+### Outer Products(외적)  
+Cross Product와 다른 연산으로 두 벡터를 행렬로 결합하는 텐서 곱이다.   
+$$\mathbf{x} \otimes \mathbf{y} = \begin{pmatrix} x_1 y_1 & x_1 y_2 & \cdots & x_1 y_n \\ x_2 y_1 & x_2 y_2 & \cdots & x_2 y_n \\
+\vdots & \vdots & \ddots & \vdots \\ x_m y_1 & x_m y_2 & \cdots & x_m y_n \end{pmatrix}$$    
+
+### Crammer's Rule  
 
 ## 4 Change of Basis, EigenVectors, EigenValues, Gram-Schmidt 
 
