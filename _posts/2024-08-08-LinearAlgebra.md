@@ -1,7 +1,7 @@
 ---
 title: "[선형대수학] 기본 개념 정리"
 categories:
-  - linear_algebra
+  - math
 tags:
   - linear_algebra
 toc: true

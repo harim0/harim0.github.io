@@ -1,8 +1,8 @@
 ---
-title: "선형대수학"
+title: "수학"
 layout: archive
-permalink: /categories/linear_algebra
+permalink: /categories/math
 ---
 
-{% assign posts = site.categories.linear_algebra %}
+{% assign posts = site.categories.math %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
